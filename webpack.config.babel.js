@@ -25,7 +25,7 @@ export default {
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.NoEmitOnErrorsPlugin(),
 		new HtmlWebpackPlugin({
-			title: 'Book Tracker | Apply What You Learn',
+			title: 'React / Typescript Frontend Boilerplate',
 			template: './app/assets/index.html',
 			favicon: './app/assets/favicon.png',
 			inject: 'body',
