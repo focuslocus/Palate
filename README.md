@@ -1,12 +1,8 @@
-App TODO:
+### Welcome
 
-Landing Page:
+This boilerplate service provides a bare-bones frontend
+client that can be integrated with other backend clients and service
+architectures.
 
-[] Display books read
-[] Display books to read
-[] Display books currently reading
-
-[] Integrate option to add prospective book under 'To Read' tab
-[] Integrate option to add synopsis under 'Have Read' tab
-[] Update book entry form to take amazon hyperlink
-[] Determine which information to display for Synopsis vs. Prospective book
+React, Typescript, Eslint and good vibes comprise the contents of
+this application. Enjoy!
