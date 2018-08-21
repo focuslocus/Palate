@@ -16,6 +16,8 @@
   },
   "homepage": "https://github.com/a-deal/self#readme",
   "dependencies": {
+    "@types/react": "^16.4.11",
+    "@types/react-dom": "^16.0.7",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",

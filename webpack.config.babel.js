@@ -1,7 +1,6 @@
 /* global __dirname */
 import { resolve } from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import webpack from 'webpack';
 
 export default {
 	entry: [
@@ -12,6 +11,7 @@ export default {
 		filename: 'app.bundle.js',
 		publicPath: '/'
 	},
+	devtool: "devtool",
 	module: {
 		rules: [
 			{
@@ -27,8 +27,6 @@ export default {
 		]
 	},
 	plugins: [
-		new webpack.HotModuleReplacementPlugin(),
-		new webpack.NoEmitOnErrorsPlugin(),
 		new HtmlWebpackPlugin({
 			title: 'React / Typescript Frontend Boilerplate',
 			template: './app/assets/index.html',
@@ -41,14 +39,10 @@ export default {
 		})
 	],
 	resolve: {
-		extensions: ['.ts', '.tsx', '.js', '.css']
+		extensions: ['.ts', '.tsx', '.js', '.css', 'json']
 	},
 	devServer: {
-		contentBase: resolve(__dirname, './dist'),
+		contentBase: resolve(__dirname, './dist/'),
 		port: 5000
-	},
-	externals: {
-		"react": "React",
-		"react-dom": "ReactDOM"
 	}
 };
