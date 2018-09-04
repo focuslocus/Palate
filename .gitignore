@@ -4,6 +4,7 @@ dist
 .tmp
 .env
 yarn-error.log
+package-lock.json
 
 # Logs
 logs
