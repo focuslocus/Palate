@@ -1,5 +1,5 @@
-# raNOMizer
+# Palate
 
-Hungry, but don't know what to eat? RaNOMizer to the rescue! Cure your indecision and hunger with one simple tap!
+Cure your indecision.
 
-Input your preferences for cuisine and cost, BOOM restaurant info or if you're feeling lucky, we can pick one without your preferences as well!
+[Product Spec](https://docs.google.com/document/d/16vxLkTXzbwJR_iUkabBwTRZ9s-ox4gMVJwAoGIi2YAM/edit)
