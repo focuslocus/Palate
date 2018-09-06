@@ -11,7 +11,7 @@ const config: webpack.Configuration = {
 	},
 	entry: [
 		'webpack-hot-middleware/client?path=/__hmr&reload=true&timeout=2000',
-		'./app/index.tsx'
+		'./src/app/index.tsx'
 	],
 	output: {
 		path: resolve(__dirname, 'dist'),
@@ -51,8 +51,8 @@ const config: webpack.Configuration = {
 		new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
 			title: 'Palate',
-			template: './app/assets/index.html',
-			favicon: './app/assets/favicon.png',
+			template: './src/app/assets/index.html',
+			favicon: './src/app/assets/favicon.png',
 			inject: 'body',
 			files: {
 				js: ['dist/app.bundle.js'],

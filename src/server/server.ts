@@ -8,7 +8,7 @@ import * as bodyParser from 'body-parser';
 import * as webpack from 'webpack';
 import * as webpackDevMiddleware from 'webpack-dev-middleware';
 import * as webpackHotMiddleware from 'webpack-hot-middleware';
-import config from '../webpack.config';
+import config from '../../webpack.config';
 
 const app: express.Express = express();
 const compiler = webpack(config);

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "predev": "rm -rf dist && yarn run build",
-    "dev": "concurrently \"npm run watch\" \"nodemon dist/src/www.js\"",
+    "dev": "concurrently \"npm run watch\" \"nodemon dist/src/server/www.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "build": "tsc -p .",
