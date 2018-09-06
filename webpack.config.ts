@@ -10,7 +10,7 @@ const config: webpack.Configuration = {
 		warnings: true
 	},
 	entry: [
-		'webpack-hot-middleware/client',
+		'webpack-hot-middleware/client?path=/__hmr&reload=true&timeout=2000',
 		'./app/index.tsx'
 	],
 	output: {

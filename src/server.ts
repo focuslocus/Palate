@@ -6,16 +6,20 @@ import * as bodyParser from 'body-parser';
 
 // Webpack Dev Imports
 import * as webpack from 'webpack';
-import * as webpackMiddleware from 'webpack-dev-middleware';
-import * as hmrMiddleware from 'webpack-hot-middleware';
+import * as webpackDevMiddleware from 'webpack-dev-middleware';
+import * as webpackHotMiddleware from 'webpack-hot-middleware';
 import config from '../webpack.config';
 
 const app: express.Express = express();
 const compiler = webpack(config);
 
 // Middleware
-app.use(webpackMiddleware(compiler, { publicPath: config.output.publicPath }));
-app.use(hmrMiddleware(compiler));
+app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath }));
+app.use(webpackHotMiddleware(compiler, {
+	log: false,
+	path: '/__hmr',
+	heartbeat: 2000
+}));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
